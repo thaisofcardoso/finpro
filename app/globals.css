@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-card: #161616;
+  --bg-elevated: #1c1c1c;
+  --border: #2a2a2a;
+  --border-gold: #c9a84c;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-dim: rgba(201, 168, 76, 0.15);
+  --text-primary: #e8e8e8;
+  --text-secondary: #a0a0a0;
+  --text-muted: #5a5a5a;
+  --green: #4caf7d;
+  --red: #e05252;
+  --green-dim: rgba(76, 175, 125, 0.12);
+  --red-dim: rgba(224, 82, 82, 0.12);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0; padding: 0;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade { animation: fadeIn 0.4s ease both; }
+.animate-fade-1 { animation: fadeIn 0.4s ease 0.05s both; }
+.animate-fade-2 { animation: fadeIn 0.4s ease 0.1s both; }
+.animate-fade-3 { animation: fadeIn 0.4s ease 0.15s both; }
+.animate-fade-4 { animation: fadeIn 0.4s ease 0.2s both; }
+.animate-fade-5 { animation: fadeIn 0.4s ease 0.25s both; }
